@@ -1,5 +1,14 @@
 # 13.Ecommerce
 
+
+## Game Plan 
+
+1. Set up project: Set up repo, identify issues. 
+2. Scaffold application's architecture: Install npm packages. 
+3. Create models (category, product, tag, productTag). 
+4. Create routes 
+5. Test routes with insomnia.
+
 ## Tasks 
 <p> ✅ Install npm packages (mysql2, sequelize, dotenv) </p>
 
