@@ -21,4 +21,10 @@
 * show databases; (to check if datbase has be successfully created)
 * use ecommerce_db; (to change into this database)
 
-<p> ✅ Define 'Category' columns (id: interger dataType, false allowNull, true primaryKey, true autoIncrement. category_name: string dataType, false allowNull. </p>
+<p> ✅ Define 'Category' columns </p>
+
+<p> ✅ Define 'Product' columns </p>
+
+<p> ✅ Define 'Tag' columns </p>
+
+<p> ✅ Define 'ProductTag' columns </p>
