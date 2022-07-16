@@ -37,11 +37,17 @@
 
 - [x] Connect seeds to database. 
 
-- [ ] Test routes on insomina.
+- [x] Test routes on insomina.
+
+
+## Screenshots 
+
 
 
 ## Links 
-http://localhost:3001/api/categories 
+http://localhost:3001/api/categories/
+http://localhost:3001/api/tags/ 
+http://localhost:3001/api/products/
 
 ## Notes
 - added "seed": "node seeds/index.js" to scripts in package.json to connect seed files. 
