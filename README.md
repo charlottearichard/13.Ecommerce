@@ -43,6 +43,8 @@
 ## Screenshots 
 
 
+## Video 
+https://youtu.be/7IPwK35TJTc
 
 ## Links 
 http://localhost:3001/api/categories/
