@@ -3,34 +3,42 @@
 
 ## Game Plan 
 
-1. Set up project: Set up repo, identify issues. ✅
-2. Scaffold application's architecture: Install npm packages. ✅
-3. Create models (category, product, tag, productTag). ✅
-4. Create routes ✅
-5. Test routes with insomnia. ⬜ 
+1. Set up project: Set up repo, identify issues. 
+2. Scaffold application's architecture: Install npm packages. 
+3. Create models (category, product, tag, productTag). 
+4. Create routes. 
+5. Test routes with insomnia. 
 
 ## Tasks 
-<p> ✅ Install npm packages (mysql2, sequelize, dotenv) </p>
+- [x] Install npm packages (mysql2, sequelize, dotenv) 
 
-<p> ✅ Connect schema to database: </p>
+- [x] Connect schema to database:
 
-* put sql password and username in .env file (this is conected to 'connection.js')
-* .gitignore env file 
-* mysql -u root -p (log-in w/ password)
-* source db/schema.sql
-* show databases; (to check if datbase has be successfully created)
-* use ecommerce_db; (to change into this database)
+    - [x] put sql password and username in .env file (this is conected to 'connection.js')
+    - [x] .gitignore env file 
+    - [x] mysql -u root -p (log-in w/ password)
+    - [x] source db/schema.sql
+    - [x] show databases; (to check if datbase has be successfully created)
+    - [x] use ecommerce_db; (to change into this database)
 
-<p> ✅ Define 'Category' columns </p>
+- [x] Define 'Category' columns 
 
-<p> ✅ Define 'Product' columns </p>
+- [x] Define 'Product' columns 
 
-<p> ✅ Define 'Tag' columns </p>
+- [x] Define 'Tag' columns 
 
-<p> ✅ Define 'ProductTag' columns </p>
+- [x] Define 'ProductTag' columns
 
-<p> ✅ Create Product routes  </p>
+- [x] Create Product routes
 
-<p> ✅ Create Category routes </p>
+- [x] Create Category routes
 
-<p> ✅ Create Tag routes  </p>
+- [x] Create Tag routes 
+
+- [ ] Connect tables to database. 
+
+- [ ] Test routes on insomina.
+
+
+## Links 
+http://localhost:3001/api/categories 
