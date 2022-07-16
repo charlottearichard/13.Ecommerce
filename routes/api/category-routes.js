@@ -11,11 +11,11 @@ router.get('/', (req, res) => {
     include: [ 
       {
         model: Product,
-        attributes: ['product_name', 'price']
+        attributes: ['id', 'product_name', 'price']
       }
     ]
   })
-  .then(dbCategory => res.json(dbCategory))
+  .then(categoryData => res.json(categoryData))
   .catch(err => {
     console.log(err);
     res.status(500).json(err);
@@ -30,17 +30,19 @@ router.get('/:id', (req, res) => {
       id: req.params.id
     }, 
     attributes: [ 'category_name', 'id'],
-    include: [{
-      model: Product, 
-      attributes: ['product_name']
-    }]
+    include: [ 
+      {
+        model: Product,
+        attributes: ['id', 'product_name', 'price']
+      }
+    ]
   })
-  .then(dbCategory => {
-    if (!dbCategory) {
+  .then(categoryData => {
+    if (!categoryData) {
       res.status(404).json({ message: 'No category found with this id' });
       return;
     }
-    res.json(dbCategory);
+    res.json(categoryData);
   })
   .catch(err => {
     console.log(err);
@@ -53,7 +55,7 @@ router.post('/', (req, res) => {
   Category.create({
     category_name: req.body.category_name,
   })
-  .then(dbCategory => res.json(dbCategory))
+  .then(categoryData => res.json(categoryData))
       .catch(err => {
         console.log(err);
         res.status(500).json(err);
@@ -72,12 +74,12 @@ router.put('/:id', (req, res) => {
       }
     }
   )
-    .then(dbCategory => {
-      if (!dbCategory) {
+    .then(categoryData => {
+      if (!categoryData) {
         res.status(404).json({ message: 'No category found with this id' });
         return;
       }
-      res.json(dbCategory);
+      res.json(categoryData);
     })
     .catch(err => {
       console.log(err);
@@ -93,12 +95,12 @@ Category.destroy({
     id: req.params.id
   }
 })
-.then(dbCategory => {
-  if (!dbCategory) {
+.then(categoryData => {
+  if (!categoryData) {
     res.status(404).json({ message: 'No category found with this id' });
     return;
   }
-  res.json(dbCategory);
+  res.json(categoryData);
 })
 .catch(err => {
   console.log(err);

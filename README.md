@@ -35,10 +35,13 @@
 
 - [x] Create Tag routes 
 
-- [ ] Connect tables to database. 
+- [x] Connect seeds to database. 
 
 - [ ] Test routes on insomina.
 
 
 ## Links 
 http://localhost:3001/api/categories 
+
+## Notes
+- added "seed": "node seeds/index.js" to scripts in package.json to connect seed files. 
